@@ -1,3 +1,25 @@
+/* COMMON CSS */
+body {
+  background-color: lightblue;
+}
+
+.section-subtilte {
+  color: #0779e4;
+  text-align: center;
+  font-size: 12px;
+}
+
+.section-title {
+  font-size: 1.7rem;
+  text-align: center;
+}
+
+.section {
+  padding-top: 3%;
+  padding-bottom: 4%;
+}
+
+/* HEADER SECTION */
 header {
   background-color: rgb(7, 121, 228);
   color: white;
@@ -24,4 +46,20 @@ header {
 
 .nav-link:hover {
   background-color: hsl(209, 94%, 76%);
+}
+
+/* services section */
+.services-cards {
+  display: flex;
+}
+
+.services-cards .card {
+  background-color: #fff;
+  flex-basis: 33%;
+  padding: 1.5em;
+}
+
+.card-title,
+.card-link {
+  color: #0779e4;
 }
