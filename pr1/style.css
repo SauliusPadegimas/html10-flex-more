@@ -1,6 +1,6 @@
 /* COMMON CSS */
 body {
-  background-color: lightblue;
+  background-color: #f8f8f8;
 }
 
 .section-subtilte {
@@ -55,15 +55,76 @@ header {
 .services-cards {
   display: flex;
   gap: 10px;
+  padding: 2rem 0;
 }
 
+.services-cards i {
+  font-size: 4em;
+  color: rgb(7, 121, 228);
+}
 .services-cards .card {
   background-color: #fff;
   flex-basis: 33%;
-  padding: 1.5em;
+  padding: 40px;
+  line-height: 1.7;
 }
 
 .card-title,
 .card-link {
   color: #0779e4;
+}
+
+/* ACHIEVEMENTS SECTION */
+
+.achievements {
+  background-color: #0779e4;
+}
+
+.points-section {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 3em 0;
+}
+
+.point {
+  flex-basis: 25%;
+  display: flex;
+  align-items: center;
+}
+
+.point p,
+.point h1 {
+  color: white;
+  margin-bottom: 0;
+}
+
+.point div {
+  padding-left: 1em;
+}
+
+.point i {
+  font-size: 4em;
+  color: white;
+}
+
+/* PORTFOLIO SECTION */
+
+.pics-section {
+  display: flex;
+  gap: 10px;
+  flex-flow: row wrap;
+}
+.pics-section div {
+  flex-basis: 49%;
+}
+
+div img {
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.pics-section div:hover {
+  opacity: 0.4;
+  /* background-color: #0779e4; */
 }
