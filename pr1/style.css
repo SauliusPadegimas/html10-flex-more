@@ -19,6 +19,9 @@ body {
   padding-bottom: 4%;
 }
 
+p {
+  color: #999;
+}
 /* HEADER SECTION */
 header {
   background-color: rgb(7, 121, 228);
@@ -51,6 +54,7 @@ header {
 /* services section */
 .services-cards {
   display: flex;
+  gap: 10px;
 }
 
 .services-cards .card {
