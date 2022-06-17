@@ -77,7 +77,17 @@ header {
 /* ACHIEVEMENTS SECTION */
 
 .achievements {
-  background-color: #0779e4;
+  /* background-color: #0779e4; */
+  /* background-image: url(./bg.webp);
+  */
+
+  background-image: linear-gradient(
+      to right,
+      rgba(7, 121, 228, 0.4),
+      rgba(7, 121, 228, 0.8)
+    ),
+    url(./bg.webp);
+  background-size: cover;
 }
 
 .points-section {
@@ -114,17 +124,20 @@ header {
   gap: 10px;
   flex-flow: row wrap;
 }
-.pics-section div {
+
+.bcg-img:nth-child(even) {
   flex-basis: 49%;
+  height: 400px;
+  color: white;
+  background-image: url(./pic1.jpg);
+  background-size: cover;
+  background-position: center;
 }
-
-div img {
-  height: 300px;
-  width: 100%;
-  object-fit: cover;
-}
-
-.pics-section div:hover {
-  opacity: 0.4;
-  /* background-color: #0779e4; */
+.bcg-img:nth-child(odd) {
+  flex-basis: 49%;
+  height: 400px;
+  color: white;
+  background-image: url(./pic2.jpg);
+  background-size: cover;
+  background-position: center;
 }
