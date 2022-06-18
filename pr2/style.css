@@ -1,0 +1,42 @@
+body {
+  background-image: url(./pics/patern.png);
+}
+
+header {
+  height: 5rem;
+  background: linear-gradient(to right, hsl(157, 100%, 6%), #007146);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0.2rem;
+  color: white;
+  position: sticky;
+  top: 0px;
+}
+
+header img {
+  height: 100%;
+}
+
+nav a:not(:last-child) {
+  margin-right: 2rem;
+}
+
+header p {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+main {
+  background-color: hsl(157, 100%, 96%);
+  height: 1000px;
+  display: flex;
+  flex-flow: column wrap;
+  gap: 10px;
+  align-content: space-around;
+}
+
+main img {
+  width: 30%;
+}

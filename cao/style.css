@@ -1,0 +1,45 @@
+body {
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+header img {
+  width: 80px;
+  margin: 0;
+}
+
+nav {
+  width: 720px;
+  text-align: right;
+}
+
+nav a:not(:last-child) {
+  margin-right: 30px;
+}
+
+main {
+  background-image: url(./pics/retail.jpg);
+}
+
+#apie {
+  width: 800px;
+  margin: 0 auto;
+  padding: 25px;
+  background-color: white;
+  margin-top: 125px;
+}
+
+#apie img {
+  width: 50%;
+  float: left;
+}
+
+footer {
+  text-align: center;
+  padding: 10px 0;
+}
