@@ -24,22 +24,62 @@ nav a:not(:last-child) {
 
 main {
   background-image: url(./pics/retail.jpg);
+  background-size: cover;
+  background-position: bottom;
+  padding: 1px;
 }
 
 #apie {
   width: 800px;
-  margin: 0 auto;
+  margin: 25px auto;
   padding: 25px;
   background-color: white;
-  margin-top: 125px;
+
+  border-radius: 5px;
 }
 
 #apie img {
   width: 50%;
   float: left;
+  margin-right: 10px;
 }
 
 footer {
   text-align: center;
   padding: 10px 0;
+}
+input,
+textarea {
+  width: 100%;
+  margin-top: 5px;
+}
+
+label {
+  display: block;
+  margin-top: 5px;
+}
+
+input[type="submit"] {
+  background-color: green;
+  width: 50%;
+  color: white;
+}
+
+table {
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+  margin-top: 3rem;
+}
+th {
+  font-weight: bold;
+}
+
+td:nth-child(3n + 1) {
+  color: green;
+}
+
+th,
+td {
+  border: 1px solid black;
 }
