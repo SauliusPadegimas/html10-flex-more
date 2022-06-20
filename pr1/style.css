@@ -18,7 +18,9 @@ body {
   padding-top: 3%;
   padding-bottom: 4%;
 }
-
+.services-section {
+  padding-top: calc(3% + 48px);
+}
 p {
   color: #999;
 }
@@ -26,6 +28,10 @@ p {
 header {
   background-color: rgb(7, 121, 228);
   color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
   /* padding: 1em 0; */
 }
 
@@ -143,12 +149,46 @@ header {
   opacity: 0.8;
   width: 100%;
   line-height: 400px;
-  padding: auto 0;
+  /* padding: auto 0; */
   text-align: center;
-  margin-bottom: 0;
+  /* margin-bottom: 0; */
 }
 .bcg-img p:hover {
   color: white;
   background-color: rgba(7, 121, 228, 0.8);
   opacity: 1;
+}
+/* USER SECTION */
+
+.user-cards {
+  display: flex;
+}
+
+.u-card {
+  flex-basis: 33%;
+  padding: 20px;
+  background-color: #fff;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.round {
+  border-radius: 50%;
+}
+.img {
+  width: 80px;
+  height: 80px;
+  flex-basis: 30%;
+}
+
+.u-title {
+  flex-basis: 60%;
+  flex-grow: 1;
+}
+
+.u-title > * {
+  margin-bottom: 0;
+  text-align: left;
 }
