@@ -125,7 +125,7 @@ header {
 
 .pics-section {
   display: flex;
-  gap: 10px;
+  gap: 20px;
   flex-flow: row wrap;
 }
 
@@ -137,7 +137,8 @@ header {
 }
 
 .bcg-img {
-  flex-basis: 49%;
+  flex-basis: 45%;
+  flex-grow: 1;
   height: 400px;
   color: white;
   background-size: cover;
@@ -162,6 +163,7 @@ header {
 
 .user-cards {
   display: flex;
+  gap: 10px;
 }
 
 .u-card {
@@ -181,6 +183,7 @@ header {
   width: 80px;
   height: 80px;
   flex-basis: 30%;
+  position: relative;
 }
 
 .u-title {
@@ -191,4 +194,46 @@ header {
 .u-title > * {
   margin-bottom: 0;
   text-align: left;
+}
+
+.u-quote {
+  padding: 6px;
+  background-color: #0779e4;
+  color: white;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+/* BLOG SECTION */
+.blog-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: flex-end;
+}
+
+.blog {
+  flex-basis: 31.9%;
+  flex-grow: 1;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+}
+.half {
+  flex-basis: 40%;
+}
+
+.same {
+  flex-grow: 0;
+}
+.blog-img {
+  height: 10em;
+  /* background-image: url(./blog1.webp); */
+}
+
+.blog-img img {
+  height: 100%;
 }
