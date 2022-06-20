@@ -27,12 +27,19 @@
         <h1>Susisiek su mūsų komanda</h1>
         <form action="">
           <label for="name">Vardas:</label>
-          <input type="text" id="name" placeholder="Petras" />
+          <input type="text" id="name" value="Petras" name="name" />
           <label for="email">El.paštas</label>
-          <input type="email" id="email" placeholder="email@email.lt" />
+          <input type="email" id="email" value="email@email.lt" name="email" />
           <label for="nr">Kortelės nr</label>
-          <input type="number" id="nr" placeholder="12345678" />
-          <label for="message">Žinutė</label>
+          <input
+            type="number"
+            id="nr"
+            name="nr"
+            placeholder="12345678"
+            minlength="8"
+            maxlength="8"
+          />
+          <label for="message" name="message">Žinutė</label>
           <textarea
             id="message"
             rows="2"
